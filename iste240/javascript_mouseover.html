@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>JavaScript mouseover</title>
+		<meta charset="utf-8" />
+		<script>
+			"use strict";
+			function change(id, img){
+				document.getElementById(id).src = img;
+			}
+		</script>
+</head>
+<body>
+  <a href="https://people.rit.edu/~jrhicsa/iste240/index3.php"><img class="NoBorder"
+      src="home_blue.png" id="home" alt="blue home button" title="blue home button"
+      onmouseover="change('home','home_red.png')"
+      onmouseout ="change('home','home_blue.png')" /> </a>
+
+</body>
+</html>

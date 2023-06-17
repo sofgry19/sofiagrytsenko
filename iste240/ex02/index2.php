@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Exercise 2 </title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id=rightside>
+  	<div id=header>
+      <p>Exercise 02</p>
+      <div id="due">
+  		<p class=duedate> Due: January 30th 2020 </p>
+      </div><!-- End of due div-->
+  	</div><!-- End of header div-->
+
+  <div class=boxes>
+  	<div class=asterisk>
+  	*
+  	<div class=flower>
+  	   <p>Lilac</p>
+     </div> <!-- End of flower div-->
+   </div> <!-- End of Asterick Div-->
+
+   </div> <!-- End of Boxes Div-->
+
+  <div class=boxes>
+  	<div class=asterisk>
+  	*
+  	<div class=flower>
+  	   <p>Dogwood</p>
+     </div> <!-- End of flower div-->
+   </div> <!-- End of Asterick Div-->
+
+   </div> <!-- End of Boxes Div-->
+
+  <div class=boxes>
+  	<div class=asterisk>
+  	*
+  	<div class=flower>
+  	   <p>Pansy</p>
+     </div> <!-- End of flower div-->
+   </div> <!-- End of Asterick Div-->
+
+   </div> <!-- End of Boxes Div-->
+
+  <div class=boxes>
+    <div class=asterisk>
+    *
+    <div class=flower>
+       <p>Iris</p>
+    </div> <!-- End of flower div-->
+  </div> <!-- End of Asterick Div-->
+
+  </div> <!-- End of Boxes Div-->
+	<footer id="footer">
+		<?php
+			echo "<br>";
+			echo "Content last changed: ".date("F d Y H:i:s.", filemtime("index2.php"));
+		?>
+	</footer>
+
+  </div> <!-- End of Righside Div-->
+
+</body>
+</html>

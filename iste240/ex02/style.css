@@ -1,0 +1,120 @@
+  body{
+  	Max-width: 750px;
+  	Margin: 0;
+  	Background-image: url("border.jpg");
+  	Background-repeat: repeat-y;
+    background-color: #c5604f;
+    display:block;
+  } /* body block; sets the background color, border, and goves the page its general rules*/
+
+#due {
+  color:#48121B;
+} /* due id; gives the due date it's color*/
+
+
+  #rightside{
+  	Float:right;
+  	max-width: 500px;
+    margin-left: 190px;
+  } /* rightside id; gives everything right of the border it's properties*/
+
+  .duedate {
+      font-family: 'Playfair Display', serif;
+      font-size: 35px;
+  } /* duedate class; gives the due date it's font and size */
+
+  #header {
+      width: 100%;
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+      font-size: 50px;
+      margin-bottom: 25px;
+      margin-left: 4px;
+      margin-top: 0px;
+      color: #48121B;
+      border-bottom: 2px #48121B solid;
+  } /* header id; gives the header it's font, color, size and position*/
+
+  .flower {
+      color: #4A2026;
+      font-size: 28px;
+      font-weight: bold;
+      text-shadow: none;
+      position: absolute;
+      top: 50px;
+      left: 40px;
+      font-family: 'Playfair Display', serif;
+  } /* flower class; gives the text in the boxes their font, color, and position*/
+
+  .asterisk {
+      position: relative;
+      left: 8px;
+      top: 6px;
+      font-size: 120px;
+      font-weight: bold;
+      color: #950013;
+      text-shadow: 2px 2px #C8626F;
+  } /* asterick class; gives the astericks their size, color, and shadow*/
+
+  .boxes {
+      display: inline-block;
+      position: relative;
+      margin: 2% 2% 4% 2%;
+      height: 180px;
+      width: 180px;
+      border-radius: 10%;
+      background-color: #2F6C53;
+      transition: all 2s;
+  } /* boxes class; gives the boxes their shape, color, and behavior*/
+
+
+  .boxes:hover {
+    background-color: #87c367;
+    cursor: pointer;
+    transform: scale(1.1);
+  } /* code for when you hover over the boxes*/
+
+  .footer{
+    color:#48121B;
+    font-family: 'Playfair Display', serif;
+    border-bottom: 2px #48121B solid;
+  }
+
+  @media only screen and (max-width: 585px) {
+      #due{
+        display:none;
+      }
+  } /* end of media query for 585*/
+
+  @media only screen and (max-width: 500px) {
+      #header{
+        display:none;
+      }
+      .duedate{
+        display:none;
+      }
+  } /* end of media query for 500px*/
+
+  @media only screen and (max-width: 384px) {
+      body{
+        background-image:none;
+      }
+      #rightside{
+        margin-left:190px;
+        width: 190px;
+      }
+      .duedate{
+        display:none;
+      }
+  } /* end of media query for 384px*/
+
+  @media only screen and (max-width: 200px) {
+      body{
+        background-image:none;
+      }
+      #rightside{
+        position:sticky;
+        left: 1px;
+        width: 197px;
+      }
+    } /* end of media query for 200px*/
