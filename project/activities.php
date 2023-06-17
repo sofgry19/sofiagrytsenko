@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Welcome to New York City</title>
+		<meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/menu.js"></script>
+
+</head>
+<body id="main">
+
+  <div id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<ul class="nav">
+		  	<li><a class="nav" href="index.php">Home</a></li>
+		  	<li><a class="nav" id="active" href="activities.php">Activites</a></li>
+		  	<li><a class="nav" href="food.php">Food</a></li>
+		  	<li><a class="nav" href="travel.php">Travel</a></li>
+				<li><a class="nav" href="nature.php">Nature Spots</a></li>
+        <li><a class="nav" href="sightseeing.php">Sighteeing</a></li>
+        <li><a class="nav" href="form.php">Feedback Form</a></li>
+        <li><a class="nav" href="about.php">About</a></li>
+        <li><a class="nav" href="grading.php">Grading Rubric</a></li>
+				<li><a class="nav" href="reference.php">References</a></li>
+		  </ul>
+	</div>
+  <span class="sticky" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+    <div class="header">
+      <header> Things To Do! </header>
+    </div>
+    <div class="body">
+      <h1>Times Square</h1>
+      <figure>
+          <img id="timessquare" class="image" src="images/timessquare1.jpg" alt="Times Square" title="Times Square"
+          onmouseover="change('timessquare','images/timessquare2.jpg'); changeCap('tsCap','Times Square 2')"
+          onmouseout ="change('timessquare','images/timessquare1.jpg'); changeCap('tsCap','Times Square 1')">
+          <figcaption id="tsCap">Times Square 1</figcaption>
+      </figure>
+      <p>Times Square is the bustling center of New York City. It is located on 42nd street and holds many stores and attractions. Broadway, the Line Store, the Disney Store, and countless restaurants are located here. No matter what you are looking for, Times Square has it.<br><br><br><br></p>
+
+      <h1>The Vessel</h1>
+      <figure>
+          <img id="thevessel" class="image" src="images/vessel.JPEG" alt="The Vessel" title="The Vessel"
+          onmouseover="change('thevessel','images/vessel2.JPEG'); changeCap('vesselCap','The Vessel 2')"
+          onmouseout ="change('thevessel','images/vessel.JPEG'); changeCap('vesselCap','The Vessel 1')">
+          <figcaption id="vesselCap">The Vessel 1</figcaption>
+      </figure>
+      <p>The Vessel is a gigantic spiral staircase, located in the Hudson Yards. It is comprised of 154 connected flights of stairs, and while climbing allow you to see the city from many new perspectives. The staircases are arranged in the shape of honeycombs, allowing for a hexogonal shape. It is a beautiful sight that belongs on your visit!<br><br><br><br><br></p>
+
+      <h1>Muesum of Modern Art</h1>
+      <figure>
+          <img id="moma" class="image" src="images/moma1.jpg" alt="Muesum of Modern Art" title="Muesum of Modern Art"
+          onmouseover="change('moma','images/moma2.jpg'); changeCap('momaCap','Muesum of Modern Art 2')"
+          onmouseout ="change('moma','images/moma1.jpg'); changeCap('momaCap','Muesum of Modern Art 1')">
+          <figcaption id="momaCap">Muesum of Modern Art 1</figcaption>
+      </figure>
+      <p>There are plenty of muesums in New York City, but one of the most iconic ones is the Muesum of Modern Art. Located in the heart of Manhatten, it provides a perfect day trip for art lovers. The MoMA provides multiple floors of different artists and events. There are cafes within the muesum, and there are new galleries and events every month. The MoMA is a must see for any visit to the city!<br><br><br></p>
+
+      <h1>The Catacombs of New York City</h1>
+      <figure>
+          <img id="catacombs" class="image" src="images/catacombs2.jpg" alt="Catacombs" title="Catacombs"
+          onmouseover="change('catacombs','images/catacombs1.jpg'); changeCap('catacombsCap','Catacombs 2')"
+          onmouseout ="change('catacombs','images/catacombs2.jpg'); changeCap('catacombsCap','Catacombs 1')">
+          <figcaption id="catacombsCap">Catacombs 1</figcaption>
+      </figure>
+      <p>Looking for something spooky? The Catacombs tour in New York is perfect for you! There are 1.5 hour tours that guide you through the nave of the Basillica of St.Patrick's Old Cathedral. In these underground tunnels you will see the historic crypts and catacombs.<br><br><br><br><br><br></p>
+    </div>
+
+    <footer>
+      <a href= "https://validator.w3.org/nu/?doc=http%3A%2F%2Fserenity.ist.rit.edu%2F%7Esdg3149%2F240%2FmidtermProject%2Factivities.html"  target="_blank"><img class="icon" src="images/w3cHTML.png" alt="HTML Validator"></a>
+      <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fserenity.ist.rit.edu%2F%7Esdg3149%2F240%2FmidtermProject%2Fcss%2Fstyle.css"  target="_blank"><img class="icon" src="images/w3cCSS.png" alt="CSS Validator"></a>
+      <?php
+        echo "<br>";
+        echo "Content last changed: ".date("F d Y H:i:s.", filemtime("activities.php"));
+      ?>
+    </footer>
+
+
+</body>
+</html>

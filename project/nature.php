@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Welcome to New York City</title>
+		<meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/menu.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+<body id="main">
+
+  <div id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<ul class="nav">
+		  	<li><a class="nav" href="index.php">Home</a></li>
+		  	<li><a class="nav" href="activities.php">Activites</a></li>
+		  	<li><a class="nav" href="food.php">Food</a></li>
+		  	<li><a class="nav" href="travel.php">Travel</a></li>
+				<li><a class="nav" id="active" href="nature.php">Nature Spots</a></li>
+        <li><a class="nav" href="sightseeing.php">Sightseeing</a></li>
+        <li><a class="nav" href="form.php">Feedback Form</a></li>
+        <li><a class="nav" href="about.php">About</a></li>
+        <li><a class="nav" href="grading.php">Grading Rubric</a></li>
+				<li><a class="nav" href="reference.php">References</a></li>
+		  </ul>
+	</div>
+  <span class="sticky" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+    <div class="header">
+      <header> Popular Nature Spots </header>
+    </div>
+    <div class="body">
+      <h1>Central Park</h1>
+      <figure>
+          <img id="centralpark" class="image" src="images/cp3.jpg" alt="Central Park" title="Central Park"
+          onmouseover="change('centralpark','images/cp1.jpg'); changeCap('cpCap','Central Park 2')"
+          onmouseout ="change('centralpark','images/cp3.jpg'); changeCap('cpCap','Central Park 1')">
+          <figcaption id="cpCap">Central Park 1</figcaption>
+      </figure>
+      <p>Central Park is the one largest park in New York City. It sits right in the middle of Manhatten and spans from 110th street to 59th street.<br><br> Central Park has a bunch of trails for walking your dog and hiking. There are also various attractions such as the Central Park Carousel, the Central Park Zoo, the Jacqueline Kennedy Onassis Reservoir, and the Hallet Nature Sanctuary. If you are looking for a more fancy spot, central park also offers the Central Park Mall, the Bethesda Terrace, and the Delacorte Theatre. There is something to do here for everybody!</p>
+
+      <h1>Brooklyn Botanic Garden</h1>
+      <figure>
+          <img id="brooklynbotanic" class="image" src="images/bbg1.jpg" alt="Brooklyn Botanic Garden" title="Brooklyn Botanic Garden"
+          onmouseover="change('brooklynbotanic','images/bbg2jpg.jpg'); changeCap('bbgCap','Brooklyn Botanic Garden 2')"
+          onmouseout ="change('brooklynbotanic','images/bbg1.jpg'); changeCap('bbgCap','Brooklyn Botanic Garden 1')">
+          <figcaption id="bbgCap">Brooklyn Botanic Garden 1</figcaption>
+      </figure>
+      <p>This is a 52 acre garden in the heart of Brooklyn. It was founded in 1910 and is located within Mount Prospect Park in Brooklyn. Within this garden, there are mini gardens that hold different types of plants. Each mini garden has a specific theme or habitat. Along with the mini gardens, there is an art gallary, a gift shop, and an aquatic plant house. If you want to spend a day learning about plants in a beautiful area, this botanical garden is for you!><br><br></p>
+
+      <h1>Carl Schurz Park</h1>
+      <figure>
+          <img id="csp" class="image" src="images/csp1.jpg" alt="Carl Schurz Park" title="Carl Schurz Park"
+          onmouseover="change('csp','images/csp2.jpg'); changeCap('cspCap','Carl Schurz Park 2')"
+          onmouseout ="change('csp','images/csp1.jpg'); changeCap('cspCap','Carl Schurz Park 1')">
+          <figcaption id="cspCap">Carl Schurz Park 1</figcaption>
+      </figure>
+      <p>This park is by the East River and contains many amazing sights. Carl Schurz Park offers two dog runs offer plenty of space for your dogs, and with no dogs it offers a beautiful place to stroll. Some of the views that the park offers are the Roosevelt Island Lighthouse, the Triborough Bridge, and the main event, the Mayor's official residence.<br><br><br><br></p>
+
+      <h1>Brooklyn Bridge</h1>
+      <figure>
+          <img id="brooklynbridge" class="image" src="images/bbp1.jpg" alt="Brooklyn Bridge" title="Brooklyn Bridge"
+          onmouseover="change('brooklynbridge','images/bbp2.jpg'); changeCap('bbCap','Brooklyn Bridge 2')"
+          onmouseout ="change('brooklynbridge','images/bbp1.jpg'); changeCap('bbCap','Brooklyn Bridge 1')">
+          <figcaption id="bbCap">Brooklyn Bridge 1</figcaption>
+      </figure>
+      <p>The Brooklyn Bridge Park is a beautiful park located right by the water. It has a bike path right along the river, allowing for exploration. During the warm months, it is a perfect spot for picnics.</p>
+    </div>
+
+    <footer>
+      <a href= "https://validator.w3.org/nu/?doc=http%3A%2F%2Fserenity.ist.rit.edu%2F%7Esdg3149%2F240%2FmidtermProject%2Fnature.html"  target="_blank"><img class="icon" src="images/w3cHTML.png" alt="HTML Validator"></a>
+      <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fserenity.ist.rit.edu%2F%7Esdg3149%2F240%2FmidtermProject%2Fcss%2Fstyle.css"  target="_blank"><img class="icon" src="images/w3cCSS.png" alt="CSS Validator"></a>
+      <?php
+        echo "<br>";
+        echo "Content last changed: ".date("F d Y H:i:s.", filemtime("nature.php"));
+      ?>
+    </footer>
+
+</body>
+</html>
