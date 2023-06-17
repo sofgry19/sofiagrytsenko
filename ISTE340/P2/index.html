@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>340 p2 ex</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	//now what?
+	//api:  http://www.ist.rit.edu/api/
+	$(document).ready(function(){
+		//get the about page..
+    //get: goes into the url bar
+    //post: changes things in the server
+    $.ajax({
+      type:"get",
+      url:"proxy.php",
+      data:{path:"/about/"}, //must have the first slash to effect the url
+      dataType:'json',
+    }).done(function(msg){
+      console.log(msg);
+      //put out the title
+      $('#content').html('<h3>'+msg.title+'</h3>');
+    });
+    //get undergrad
+    $.ajax({
+      type:'get',
+      url:'proxy.php',
+      data:{path:'/degrees/undergraduate/'},
+      dataType:'json'
+    }).done(function(msg){
+      console.log(msg.undergraduate[0].title);
+      $.each(msg.undergraduate,function(i,item){
+        $('#content').append('<h4>'+item.title+'</h4>');
+        $('#content').append('<p>'+this.description+'</p>');
+      });
+    });
+
+    //xhr('get',{path:'/minors/'},'#minors').done(function(json){
+    //console.log(json);
+  //});
+
+	});
+  //ajax util
+  //args
+  //getPost - is it a get or a post? POST
+  //idForSpinner - the id of the tag ti out the spinner in
+  function xhr(getPost, d, idForSpinner){
+    return $.ajax({
+      type: getPost,
+      data: d,
+      dataType:'json',
+      cache: false,
+      async: true,
+      url:'proxy.php',
+      beforeSend: function(){
+        //make spinner
+        $(idForSpinner).append('<img src="assets/media/gears.gif" class="spinner"');
+      }
+    }).always(function(){
+      //kill spinner
+      //$(idForSpinner).find('.bsSpinner').fadeOut(500).remove();
+      $(idForSpinner).find('.bsSpinner').fadeOut(500,function(){
+        $this.remove();
+      });
+    }).fail(function(err){
+        console.log(err);
+    });
+  }
+
+</script>
+</head>
+<body>
+  <h2>iSchool Site</h2>
+	<div id="content" style="height:200px"></div>
+
+  <section id="content" class="minors">
+
+	<div id="people"></div>
+
+</body>
+</html>

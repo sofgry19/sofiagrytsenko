@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Responsive Images Excerise </title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="parent">
+    <!-- Div for Main Title  -->
+      <div class="header">
+        <h1> Different Types of Turtles </h1>
+      </div>
+    <!-- Div for first turtle photo -->
+      <div class="pic1">
+        <!-- use srcset for resolution switches -->
+        <picture>
+          <source media="(min-width:600px)" srcset="images/seaturtleTABLET.jpg">
+          <source media="(min-width:462px)" srcset="images/seaturtlePHABLET.jpg">
+          <source media="(min-width: 0px)" srcset="images/seaturtlePHONE.jpg">
+          <img title="Sea Turtle" class="image" alt="Image of Sea Turtle" src="images/seaturtleTABLET.jpg">
+      </picture>
+      </div>
+    <!-- Div for first text block -->
+      <div class="text1">
+        <h2> Sea Turtles </h2>
+          <p> Sea turtles live in almost every ocean basin <br>throughout the world, nesting on tropical and <br> subtropical beaches. They migrate long distances <br> to feed, often crossing entire oceans. <br> Some loggerheads nest in Japan and migrate to <br> Baja California Sur, Mexico to forage before <br> returning home again. </p>
+      </div>
+  <!-- Div for second turtle photo -->
+      <div class="pic2">
+        <!-- use srcset for art direction switches -->
+      <picture>
+		          <source media="(min-width:600px)" srcset="images/pondturtle.jpg">
+		          <source media="(min-width:462px)" srcset="images/pondturtlePHABLET.jpg">
+		          <source media="(min-width: 0px)" srcset="images/pondturtlePHONE.jpg">
+							<img title="Pond Turtle" class="image" alt="Image of Pond Turtle" src="images/pondturtle.jpg">
+      	</picture>
+				<!-- <img title="Pond Turtle" class="image" alt="Image of Pond Turtle" src="images/pondturtle.jpg"> -->
+      </div>
+    <!-- Div for second text block -->
+      <div class="text2">
+        <h2> Pond Turtles </h2>
+          <p> Adult pond turtles range from 15-20 cm in length and weigh 448-1100g. Where they live: The range of the western pond turtle extends from the Puget Sound lowlands in Washington through western Oregon and California, south to Baja California. </p>
+      </div>
+  <!-- Div for banner with background photo-->
+      <div class="banner">
+      </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+ [
+
+		{
+						"objID": 1,
+            "name":"English Ivy",
+            "light": "Medium Bright",
+            "water": "When soil dries out",
+            "desc": "English ivy is a vining plant that smothers buildings and races across the ground. Ivy is beautiful but is also considered an invasive plant because of its aggressive growth habit.",
+            "image": "ivy"
+        	},
+		{
+						"objID": 2,
+						"name":"Aloe Vera",
+            "light": "Very Bright",
+            "water": "Every 2-3 weeks",
+            "desc": "The aloe vera plant is an easy, attractive succulent that makes for a great indoor companion. Aloe vera plants are useful, too, as the juice from their leaves can be used to relieve pain from scrapes and burns when applied topically. ",
+            "image": "aloe"
+        	},
+		{
+						"objID": 3,
+						"name":"Spider Plant",
+            "light": "Indirect Light",
+            "water": "When soil dries out",
+            "desc": "The spider plant is so named because of its spider-like plants, or spiderettes, which dangle down from the mother plant like spiders on a web. Available in green or variegated varieties, these spiderettes often start out as small white flowers.",
+            "image": "spider"
+        	},
+		{
+						"objID": 4,
+					  "name":"Peace Lily",
+            "light": "Bright Room, Indirect Light",
+            "water": "Every couple days",
+            "desc": "Peace lilies are a wonderful starter plant since they are relatively easy to care for. They can grow in a variety of environments and are a very hardy plant that adapts well to changes. Though it is not a true lily, it still produces beautiful white flowers that lend themselves to the plant's name since the white flowers resemble white flags of surrender.",
+            "image": "lily"
+        	},
+		{
+						"objID": 5,
+						"name":"Jade",
+            "light": "Direct Sunlight",
+            "water": "When the top of the soil is dry",
+            "desc": "Jade plant care is easy and simple. Many people enjoy growing jade plants in their homes and offices, and they are considered to be symbols of good luck.",
+            "image": "jade"
+        	},
+		{
+					  "objID": 6,
+					  "name":"Yucca",
+            "light": "Direct Light",
+            "water": "When the soil is completely dry",
+            "desc": "Yucca is a genus of more than 40 perennial plants, shrubs, and trees, but only a few are grown as houseplants under the label yucca plant. Sometimes confused with the similar-looking Dracaena genus, yuccas are interesting and slow-growing houseplants that have the added benefit of being extremely drought tolerant.",
+            "image": "yucca"
+        	},
+		{
+						"objID": 7,
+						"name":"Pothos",
+            "light": "Anything but direct light",
+            "water": "Every week",
+            "desc": "The pothos plant is considered by many to be a great way to get started caring for houseplants. Because pothos care is easy and undemanding, this lovely plant is an easy way to add some green in your home.",
+            "image": "pothos"
+        	},
+		{
+					 "objID": 8,
+					 "name":"Chinese Money Plant",
+            "light": "Direct Sunlight",
+            "water": "When the soil dries out",
+            "desc": "The Chinese money plant (or Pilea) is frequently featured in Scandinavian interiors, where its bright green pancake-shaped leaves provide an adorable and welcome burst of color against white walls. They’re said to be easy to grow, but if you’ve ever tried to find one of your own in a plant shop, you likely came home empty-handed.",
+            "image": "money"
+        	},
+		{
+						"objID": 9,
+						"name":"ZZ Plant",
+            "light": "Not Bright / No Direct Light",
+            "water": "Once a Month",
+            "desc": "If ever there was the perfect plant for the ultimate brown thumb, the easy ZZ plant is it. This virtually indestructible houseplant can take months and months of neglect and low light and still look amazing.",
+            "image": "zz"
+        	},
+		{
+						"objID": 10,
+						"name":"Snake Plant",
+            "light": "Indirect Light",
+            "water": "When the soil is completely dry",
+            "desc": "Snake plant care is very straightforward. These plants can be neglected for weeks at a time; yet, with their strappy leaves and architectural shape, they still look fresh.",
+            "image": "snake"
+        	}
+
+	]
+

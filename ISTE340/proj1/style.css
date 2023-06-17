@@ -1,0 +1,31 @@
+body{
+  background-color: #c8b7a6;
+  font-family: 'Signika Negative', sans-serif;
+}
+
+.container{
+		overflow:auto;
+		width:auto;
+		height:auto;
+		border:#703f37 10px solid;
+		background:#c29591;
+		margin:10px;
+    padding:5px;
+    animation: slide 1.5s forwards;
+    -webkit-animation: slide 1.5s forwards;
+}
+
+@keyframes slide{
+  0%{
+    transform: translateX(-500px);
+    -webkit-transform: translateX(-500px);
+  }
+}
+
+  h1,h2,h3{
+    color: #301008;
+  }
+
+  a{
+    font-family: 'Signika Negative', sans-serif;
+  }

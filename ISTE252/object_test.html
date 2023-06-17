@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My Heading</h2>
+
+<p id="demo"></p>
+
+<script>
+var dinos = [
+    {
+       "id":          0,
+       "name":        "Pisanosaurus",
+       "Period":      "Late Triassic",
+       "diet":        "Herbivorous",
+       "length":      "0.9m",
+    },
+    {
+       "id":          1,
+       "name":        "Herrerasaurus",
+       "period":      "Late Triassic",
+       "diet":        "carnivorous",
+       "length":      "3.0m",
+       "description": "Herrerasaurus was one of the earliest dinosaurs. Its name means 'Herrera's lizard', after the rancher who discovered the first specimen. All known fossils of this carnivore have been discovered in rocks of Carnian age (late Triassic according to the ICS, dated to 231.4 million years ago) in northwestern Argentina.",
+    }
+ ];
+
+
+document.getElementById("demo").innerHTML =
+(JSON.stringify(dinos, null, 20));;
+</script>
+
+</body>
+</html>

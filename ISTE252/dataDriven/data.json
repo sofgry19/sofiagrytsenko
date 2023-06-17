@@ -1,0 +1,83 @@
+[
+   {
+      "objID": 1,
+      "yogapose": "Downward Facing Dog",
+      "level": "Beginning",
+      "sanskrit": "Adho Mukha Svanasana",
+      "description": "This posture imitates a dog stretching downward. It rests the heart.",
+      "duration": 30,
+      "image": "downdog"
+   },
+   {
+      "objID": 2,
+      "yogapose": "Crow or Crane Pose",
+      "level": "Advanced",
+      "sanskrit": "Bakasana",
+      "description": "This posture imitates the shampe of a bird. The arms become likelegs to support the body.",
+      "duration": 30,
+      "image": "crowpose"
+   },
+   {
+      "objID": 3,
+      "yogapose": "Child Pose",
+      "level": "Beginning",
+      "sanskrit": "Balasana",
+      "description": "Balasana is a counter asana for various asanas and is usually practiced before and after Sirsasana.",
+      "duration": 90,
+      "image": "childpose"
+   },
+   {
+      "objID": 4,
+      "yogapose": "Supported Head Stand",
+      "level": "Advanced",
+      "sanskrit": "Salamba Sirsasana I",
+      "description": "The head-balance is called the king of the postures. It develops poise andlightness, and stimulates the brain",
+      "duration": 0,
+      "image": "headstand"
+   },
+   {
+      "objID": 5,
+      "yogapose": "Resting Pose",
+      "level": "Beginning",
+      "sanskrit": "Sukhasana",
+      "description": "This is a easy posture, where the legs are crossed simply. Sukha means happy, this pose is also called Happy Pose",
+      "duration": 120,
+      "image": "meditation"
+   },
+   {
+      "objID": 6,
+      "yogapose": "Cobra Pose",
+      "level": "Intermediate",
+      "sanskrit": "Urdhva Mukha Svanasana",
+      "description": "This is a vigorous upward stretch of the trunk.",
+      "duration": 30,
+      "image": "cobrapose"
+   },
+   {
+      "objID": 7,
+      "yogapose": "Warrior I Pose",
+      "level": "Intermediate",
+      "sanskrit": "Vira Bhadradsana",
+      "description": "This is a vigorous posture which fills the body with strentgh.",
+      "duration": 90,
+      "image": "warriorone"
+   },
+   {
+      "objID": 8,
+      "yogapose": "Warrior II Pose",
+      "level": "Beginning",
+      "sanskrit": "Vira Bhadradsana II",
+      "description": "This is the second warrior pose. The body rises erect over the legs, while the arms reach out to opposite sides.",
+      "duration": 90,
+      "image": "warriortwo"
+   },
+   {
+      "objID": 9,
+      "yogapose": "Tree Pose",
+      "level": "Intermediate",
+      "sanskrit": "Vriksasana",
+      "description": "The tree pose gives a beautiful upward stretch and a sense of balance.",
+      "duration": 20,
+      "image": "treepose"
+   }
+]

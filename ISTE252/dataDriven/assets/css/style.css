@@ -1,0 +1,19 @@
+#listMenu{
+
+}
+h1{
+  font-size: 30px;
+}
+h2{
+  font-size: 20px;
+}
+p{
+  font-size: 10px;
+}
+.new{
+  display: inline-block;
+  border: 2px solid black;
+  width: fit-content;
+  height: fit-content;
+  flex-wrap: wrap;
+}

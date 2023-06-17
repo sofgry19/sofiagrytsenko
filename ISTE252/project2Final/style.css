@@ -1,0 +1,82 @@
+/* css for the whole page */
+*{
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+/* css for h2 headers */
+
+h2{
+  font-size: 25px;
+  color: #002b04;
+}
+
+/* css for h1 headers */
+h1{
+  font-size: 35px;
+}
+
+/* css for paragraph text */
+p{
+  font-size: 19px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* css for the div that holds all of the cards */
+#new{
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/*css for the images */
+img{
+  max-width: 250px;
+}
+
+/* css to center images */
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/*css for the inidivual card divs */
+#card{
+    flex: 6;
+    margin: 16px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    transition: 0.3s;
+    min-width: 20%;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #B4FD9B;
+    border: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* css for the navigation bar */
+#nav{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #76BE5D;
+  max-height: 5em;
+}
+#nav li{
+    list-style-type: none;
+}
+
+#nav .logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 4.5em;
+  padding-bottom: 5em;
+}
